@@ -21,7 +21,7 @@ def create_bystate_df(df):
     
     return bystate_df
 
-data = pd.read_csv("merged_data.csv")
+data = pd.read_csv('dashboard/merged_data.csv')
 review_df = data.groupby("product_category_name_english").review_score.mean().sort_values(ascending=False).reset_index()
 sales_count = data.groupby('product_category_name_english')['order_id'].count().reset_index()
 delivery_counts = data['delivery_on_time'].value_counts()
