@@ -5,7 +5,7 @@
 pip install numpy pandas matplotlib seaborn jupyter streamlit babel
 ```
 
-## Run steamlit app
+## Run streamlit app
 ```
 streamlit run dashboard.py
 ```
